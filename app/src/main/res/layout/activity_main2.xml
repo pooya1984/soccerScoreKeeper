@@ -19,12 +19,13 @@
 
     <Button
         android:id="@+id/show_result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:layout_height="80dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:onClick="showResult"
-        android:text="result" />
+        android:text="result"
+        android:textSize="50sp" />
 
     <TextView
         android:id="@+id/vs_team"
@@ -34,44 +35,43 @@
         android:layout_marginTop="16dp"
         android:text="VS"
         android:textColor="#FFFF00"
-        android:textSize="20sp" />
+        android:textSize="40sp" />
+
     <ImageView
-        android:layout_marginTop="40dp"
-        android:src="@drawable/favicon"
         android:id="@+id/goal_icon"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_below="@id/vs_team"
         android:layout_centerHorizontal="true"
-        />
+        android:layout_marginTop="40dp"
+        android:src="@drawable/favicon" />
+
     <ImageView
-        android:layout_marginTop="12dp"
-        android:src="@drawable/football_corner"
         android:id="@+id/corner_icon"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_below="@id/goal_icon"
         android:layout_centerHorizontal="true"
-        />
-    <ImageView
         android:layout_marginTop="12dp"
-        android:src="@drawable/hand_red"
+        android:src="@drawable/football_corner" />
+
+    <ImageView
         android:id="@+id/red_icon"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_below="@id/corner_icon"
         android:layout_centerHorizontal="true"
-        />
-    <ImageView
         android:layout_marginTop="12dp"
-        android:src="@drawable/hand_yellow"
+        android:src="@drawable/hand_red" />
+
+    <ImageView
         android:id="@+id/yellow_icon"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_below="@id/red_icon"
         android:layout_centerHorizontal="true"
-        />
-
+        android:layout_marginTop="12dp"
+        android:src="@drawable/hand_yellow" />
 
 
     <LinearLayout
@@ -97,7 +97,7 @@
                     android:inputType="textMultiLine"
                     android:textColor="#FFFF00"
                     android:textColorHint="#FFFF00"
-                    android:textSize="40sp" />
+                    android:textSize="60sp" />
 
                 <TextView
                     android:id="@+id/team_a_score"
@@ -107,7 +107,7 @@
                     android:text="g"
                     android:textAllCaps="true"
                     android:textColor="#FFFF00"
-                    android:textSize="20sp" />
+                    android:textSize="50sp" />
 
                 <TextView
                     android:id="@+id/team_a_corner"
@@ -117,7 +117,7 @@
                     android:text="c"
                     android:textAllCaps="true"
                     android:textColor="#FFFF00"
-                    android:textSize="20sp" />
+                    android:textSize="50sp" />
 
                 <TextView
                     android:id="@+id/team_a_cart_red"
@@ -127,7 +127,7 @@
                     android:text="r"
                     android:textAllCaps="true"
                     android:textColor="#FFFF00"
-                    android:textSize="20sp" />
+                    android:textSize="50sp" />
 
                 <TextView
                     android:id="@+id/team_a_cart_yellow"
@@ -137,7 +137,7 @@
                     android:text="y"
                     android:textAllCaps="true"
                     android:textColor="#FFFF00"
-                    android:textSize="20sp" />
+                    android:textSize="50sp" />
 
             </LinearLayout>
 
@@ -148,20 +148,20 @@
                 android:orientation="horizontal">
 
                 <ImageButton
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
                     android:layout_marginLeft="16dp"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
                     android:onClick="addOneForGoal"
-                    android:src="@drawable/favicon"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/favicon" />
 
                 <ImageButton
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
                     android:layout_marginLeft="16dp"
                     android:onClick="addOneForCorner"
-                    android:src="@drawable/football_corner"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/football_corner" />
             </LinearLayout>
 
             <LinearLayout
@@ -171,22 +171,22 @@
 
 
                 <ImageButton
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
                     android:layout_marginLeft="16dp"
                     android:onClick="addOneForRedCard"
-                    android:src="@drawable/hand_red"
                     android:scaleType="centerCrop"
+                    android:src="@drawable/hand_red"
                     android:text="Red card"
                     android:textSize="7dp" />
 
                 <ImageButton
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
                     android:layout_marginLeft="16dp"
                     android:onClick="addOneForYellowCard"
-                    android:src="@drawable/hand_yellow"
                     android:scaleType="centerCrop"
+                    android:src="@drawable/hand_yellow"
                     android:text="Yellow card"
                     android:textSize="7dp" />
 
@@ -215,9 +215,7 @@
                     android:inputType="textMultiLine"
                     android:textColor="#FFFF00"
                     android:textColorHint="#FFFF00"
-                    android:textSize="40sp" />
-
-
+                    android:textSize="60sp" />
 
 
                 <TextView
@@ -230,7 +228,7 @@
                     android:text="g"
                     android:textAllCaps="true"
                     android:textColor="#FFFF00"
-                    android:textSize="20sp" />
+                    android:textSize="50sp" />
 
                 <TextView
                     android:id="@+id/team_b_corner"
@@ -241,7 +239,7 @@
                     android:text="c"
                     android:textAllCaps="true"
                     android:textColor="#FFFF00"
-                    android:textSize="20sp" />
+                    android:textSize="50sp" />
 
                 <TextView
                     android:id="@+id/team_b_cart_red"
@@ -252,7 +250,7 @@
                     android:text="r"
                     android:textAllCaps="true"
                     android:textColor="#FFFF00"
-                    android:textSize="20sp" />
+                    android:textSize="50sp" />
 
                 <TextView
                     android:id="@+id/team_b_cart_yellow"
@@ -263,64 +261,63 @@
                     android:text="y"
                     android:textAllCaps="true"
                     android:textColor="#FFFF00"
-                    android:textSize="20sp" />
+                    android:textSize="50sp" />
 
                 <ImageButton
                     android:id="@+id/goalC"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    android:layout_marginRight="16dp"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
                     android:layout_alignParentRight="true"
                     android:layout_below="@id/team_b_cart_yellow"
+                    android:layout_marginRight="16dp"
                     android:layout_marginTop="30dp"
                     android:onClick="addOneForBCorner"
-                    android:src="@drawable/football_corner"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/football_corner" />
 
 
                 <ImageButton
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
                     android:layout_below="@id/team_b_cart_yellow"
                     android:layout_marginRight="16dp"
                     android:layout_marginTop="30dp"
                     android:layout_toLeftOf="@id/goalC"
                     android:onClick="addOneForBGoal"
-                    android:src="@drawable/favicon"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/favicon" />
 
 
                 <ImageButton
                     android:id="@+id/redCardB"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
                     android:layout_below="@id/goalC"
                     android:layout_marginRight="16dp"
                     android:layout_marginTop="16dp"
                     android:layout_toLeftOf="@id/goalC"
                     android:onClick="addOneForBRedCard"
-                    android:src="@drawable/hand_red"
                     android:scaleType="centerCrop"
+                    android:src="@drawable/hand_red"
                     android:text="Red card"
                     android:textSize="7dp"
                     tools:ignore="UnknownId" />
 
                 <ImageButton
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    android:layout_marginRight="16dp"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
                     android:layout_alignParentRight="true"
                     android:layout_below="@id/goalC"
+                    android:layout_marginRight="16dp"
                     android:layout_marginTop="16dp"
                     android:onClick="addOneForBYellowCard"
-                    android:src="@drawable/hand_yellow"
                     android:scaleType="centerCrop"
+                    android:src="@drawable/hand_yellow"
                     android:text="Yellow card"
                     android:textSize="7dp" />
             </RelativeLayout>
         </LinearLayout>
     </LinearLayout>
-
 
 
 </RelativeLayout>

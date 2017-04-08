@@ -42,12 +42,5 @@
         android:textStyle="bold" />
 
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerVertical="true"
-        android:onClick="mail"
-        android:text="shair with e_mail" />
 
 </RelativeLayout>

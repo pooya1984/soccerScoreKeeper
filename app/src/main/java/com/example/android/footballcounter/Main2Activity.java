@@ -86,7 +86,11 @@ public class Main2Activity extends AppCompatActivity {
 
         Intent myIntent = new Intent(Main2Activity.this, Main3Activity.class);
         myIntent.putExtra("score", scoreTeamA);
+        myIntent.putExtra("redCard", redCard);
+        myIntent.putExtra("yellowCard", yellowCard);
         myIntent.putExtra("score_b", scoreTeamB);
+        myIntent.putExtra("redCardB", redCardTeamB);
+        myIntent.putExtra("YelloCardB", yellowCardTeamB);
         myIntent.putExtra("message_key",message);
         myIntent.putExtra("message_key_do",messageTwo);
         startActivity(myIntent);
@@ -162,6 +166,9 @@ public class Main2Activity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_b_cart_yellow);
         scoreView.setText(String.valueOf(score));
     }
+
+
+
 
 
 

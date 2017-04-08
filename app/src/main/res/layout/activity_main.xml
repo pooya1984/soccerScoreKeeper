@@ -31,7 +31,8 @@
         android:layout_height="wrap_content"
         android:text="Enter the name of Teams below"
         android:textColor="#FFC107"
-        android:textSize="30sp" />
+        android:textSize="80sp"
+        android:gravity="center_horizontal"/>
 
     <EditText
         android:id="@+id/name_field"
