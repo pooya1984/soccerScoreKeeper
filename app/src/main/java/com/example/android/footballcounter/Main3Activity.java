@@ -59,20 +59,7 @@ public class Main3Activity extends AppCompatActivity {
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
-    public void mail(View view) {
-        String ResultMessage = message + ":" + scoreTeamA + "\nRed Card: " + redCard + "\nYellow Card: "
-                + yellowCard + "\nVS\n" + messageTwo + ":" + scoreTeamB + "\nRed Card: " + redCardTeamB
-                + "\nYellow Card: " + yellowCardTeamB;
-        displayMessage(ResultMessage);
 
-        Intent intent = new Intent(Intent.ACTION_SENDTO);
-        intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-        intent.putExtra(Intent.EXTRA_SUBJECT, "Result for" + message + messageTwo);
-        intent.putExtra(Intent.EXTRA_SUBJECT, ResultMessage);
-        if (intent.resolveActivity(getPackageManager()) != null) {
-            startActivity(intent);
-        }
-    }
 
     public void reset(View view) {
         Intent myIntent = new Intent(Main3Activity.this, MainActivity.class);

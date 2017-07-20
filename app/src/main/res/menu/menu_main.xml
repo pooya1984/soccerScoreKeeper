@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/theme_id"
+        android:showAsAction="always"
+        android:title="About"
+        tools:ignore="AppCompatResource" />
+
+
+    <item
+        android:id="@+id/share_id"
+        android:icon="@drawable/ic_share_black_48dp_1x"
+        android:showAsAction="always"
+        android:title="Share"
+        android:actionProviderClass="android.widget.ShareActionProvider" />
+
+
+</menu>
