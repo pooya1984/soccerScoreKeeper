@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-public class Main2Activity extends AppCompatActivity {
+public class ScoreActivity extends AppCompatActivity {
 
     String message;
     String messageTwo;
@@ -22,7 +22,7 @@ public class Main2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_score);
 
         Intent mIntent = getIntent();
         message = mIntent.getStringExtra("message_key");
@@ -81,7 +81,7 @@ public class Main2Activity extends AppCompatActivity {
 
     public void showResult (View view) {
 
-        Intent myIntent = new Intent(Main2Activity.this, Main3Activity.class);
+        Intent myIntent = new Intent(ScoreActivity.this, ResultActivity.class);
         myIntent.putExtra("score", scoreTeamA);
         myIntent.putExtra("redCard", redCard);
         myIntent.putExtra("yellowCard", yellowCard);

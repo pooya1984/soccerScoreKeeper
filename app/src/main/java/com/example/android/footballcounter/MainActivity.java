@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be called when the numbers view is clicked on.
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(MainActivity.this, Main2Activity.class);
+                Intent myIntent = new Intent(MainActivity.this, ScoreActivity.class);
                 String message = nameField.getText().toString();
                 myIntent.putExtra("message_key",message);
                 String messageTwo= nameFieldB.getText().toString();

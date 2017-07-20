@@ -16,7 +16,7 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
 
-public class Main3Activity extends AppCompatActivity {
+public class ResultActivity extends AppCompatActivity {
 
     int scoreTeamA;
     int scoreTeamB;
@@ -35,7 +35,7 @@ public class Main3Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.activity_result);
 
         Intent mIntent = getIntent();
         scoreTeamA = mIntent.getIntExtra("score", 0);
@@ -60,7 +60,7 @@ public class Main3Activity extends AppCompatActivity {
     }
 
     public void reset(View view) {
-        Intent myIntent = new Intent(Main3Activity.this, MainActivity.class);
+        Intent myIntent = new Intent(ResultActivity.this, MainActivity.class);
         startActivity(myIntent);
     }
 
