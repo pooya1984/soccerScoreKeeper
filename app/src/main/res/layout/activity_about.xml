@@ -11,7 +11,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.android.footballcounter.About">
 
-
     <TextView
         android:id="@+id/text_view_one"
         android:layout_width="wrap_content"

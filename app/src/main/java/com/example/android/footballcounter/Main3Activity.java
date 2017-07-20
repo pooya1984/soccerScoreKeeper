@@ -59,13 +59,10 @@ public class Main3Activity extends AppCompatActivity {
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
-
-
     public void reset(View view) {
         Intent myIntent = new Intent(Main3Activity.this, MainActivity.class);
         startActivity(myIntent);
     }
-
 
     /**
      * This method displays the given text on the screen.
@@ -83,12 +80,9 @@ public class Main3Activity extends AppCompatActivity {
         return true;
     }
 
-
     @Override
     public boolean onOptionsItemSelected (MenuItem item){
         switch (item.getItemId()){
-
-
             case R.id.theme_id:
                 Toast.makeText(getApplicationContext(),"This App is for Football counter",Toast.LENGTH_LONG).show();
                 return true;
@@ -104,8 +98,6 @@ public class Main3Activity extends AppCompatActivity {
             default:
         }
         return super.onOptionsItemSelected(item);}
-
-
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -142,4 +134,3 @@ public class Main3Activity extends AppCompatActivity {
         client.disconnect();
     }
 }
-

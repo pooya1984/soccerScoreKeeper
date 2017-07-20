@@ -12,8 +12,6 @@ public class MainActivity extends AppCompatActivity {
     EditText nameField;
     EditText nameFieldB;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,12 +20,9 @@ public class MainActivity extends AppCompatActivity {
         nameField = (EditText) findViewById(R.id.name_field);
         nameFieldB = (EditText) findViewById(R.id.name_field_b);
 
+        Button openP = (Button) findViewById(R.id.open_second_p);
 
-
-        Button openp = (Button) findViewById(R.id.open_second_p);
-
-
-        openp.setOnClickListener(new View.OnClickListener()
+        openP.setOnClickListener(new View.OnClickListener()
         {
             // The code in this method will be called when the numbers view is clicked on.
             @Override
@@ -41,6 +36,4 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-    }
-
-}
+    }}

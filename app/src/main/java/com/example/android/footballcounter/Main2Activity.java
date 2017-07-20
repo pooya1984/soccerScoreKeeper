@@ -19,7 +19,6 @@ public class Main2Activity extends AppCompatActivity {
     int yellowCard=0;
     int yellowCardTeamB=0;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,8 +79,6 @@ public class Main2Activity extends AppCompatActivity {
         displayForTeamBCartYellow(yellowCardTeamB);
     }
 
-
-
     public void showResult (View view) {
 
         Intent myIntent = new Intent(Main2Activity.this, Main3Activity.class);
@@ -95,14 +92,6 @@ public class Main2Activity extends AppCompatActivity {
         myIntent.putExtra("message_key_do",messageTwo);
         startActivity(myIntent);
     }
-
-
-
-
-
-
-
-
         /**
          * Displays the given score for Team A.
          */
@@ -134,7 +123,6 @@ public class Main2Activity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_a_cart_yellow);
         scoreView.setText(String.valueOf(score));
     }
-
     /**
      * Displays the given score for Team B.
      */
@@ -142,7 +130,6 @@ public class Main2Activity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
-
     /**
      * Displays the given corner for Team B.
      */
@@ -150,7 +137,6 @@ public class Main2Activity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_b_corner);
         scoreView.setText(String.valueOf(score));
     }
-
     /**
      * Displays the given Red Cart for Team B.
      */
@@ -158,7 +144,6 @@ public class Main2Activity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_b_cart_red);
         scoreView.setText(String.valueOf(score));
     }
-
     /**
      * Displays the given Yellow Cart for Team B.
      */
@@ -166,12 +151,4 @@ public class Main2Activity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_b_cart_yellow);
         scoreView.setText(String.valueOf(score));
     }
-
-
-
-
-
-
-
-
 }
